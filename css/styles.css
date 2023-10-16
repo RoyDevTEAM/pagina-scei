@@ -1,0 +1,899 @@
+/* Estilos para la sección de Portada */
+.portada {
+    background-color: #243c84;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    animation: fadeIn 2s ease; /* Animación de aparecer */
+}
+
+.portada .container {
+    position: relative;
+}
+
+.portada .img-empresa {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.portada .titulo-portada {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.portada .descripcion-portada {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.portada .redes-sociales {
+    margin-top: 20px;
+}
+
+/* Efecto de hover creativo para los iconos */
+.portada .icono-red-social {
+    font-size: 32px;
+    margin: 0 15px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.portada .icono-red-social:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s;
+}
+
+.portada .icono-red-social:hover {
+    color: #33EAD9;
+}
+
+.portada .icono-red-social:hover:before {
+    transform: scaleX(1);
+}
+
+.portada .btn-conectanos {
+    background-color: #227FFD;
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.portada .btn-conectanos:hover {
+    background-color: #22C1A5;
+}
+
+/* Animación de aparecer */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos para las cards de Últimas Noticias y Últimas Actividades */
+.card.card-3d {
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    margin-bottom: 30px;
+}
+
+.card.card-3d:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card.card-3d .card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.card.card-3d:hover .card-img-top {
+    transform: translateY(-10px);
+}
+
+.card.card-3d .card-body {
+    padding: 20px;
+}
+
+.card.card-3d .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #227FFD;
+    text-align: center;
+}
+
+.card.card-3d .card-text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card.card-3d .btn.btn-primary {
+    background-color: #243c84;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card.card-3d .btn.btn-primary:hover {
+    background-color: #243c84;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos específicos para las secciones */
+.ultimas-noticias h2
+ {
+    font-size: 36px;
+    font-weight: bold;
+    color: #227FFD;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Estilos para la sección de Últimas Actividades */
+.ultimas-actividades {
+    background-color: #f5f5f5; /* Cambia el color de fondo según tus preferencias */
+    padding: 50px 0;
+}
+
+.ultimas-actividades h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color:#227FFD;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.actividad {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.actividad:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.img-actividad {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.img-actividad:hover {
+    transform: translateY(-10px);
+}
+
+.actividad-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.actividad-descripcion {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin: 0 20px 20px 20px;
+}
+
+.btn.btn-primary {
+    background-color: #243c84;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn.btn-primary:hover {
+    background-color: #227FFD;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Estilos para el menú de navegación */
+.navbar {
+    background-color: #243c84;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 20px;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-nav .nav-link i {
+    margin-right: 5px;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #227FFD;
+    transform: translateY(-3px);
+}
+
+.navbar-nav .nav-link:hover i {
+    transform: rotateY(180deg);
+}
+/* Estilos para el footer */
+.footer {
+    background-color: #243c84;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.logo-footer {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: 200px;
+}
+
+.descripcion-footer {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.redes-sociales-footer {
+    margin-top: 20px;
+}
+
+.icono-red-social {
+    font-size: 36px;
+    margin: 0 15px;
+    color: #fff;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icono-red-social:hover {
+    transform: scale(1.2);
+    color: #227FFD;
+}
+
+.titulo-enlaces {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.enlaces-rapidos {
+    list-style: none;
+    padding: 0;
+}
+
+.enlaces-rapidos li {
+    margin-bottom: 10px;
+}
+
+.enlaces-rapidos a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.enlaces-rapidos a:hover {
+    color: #227FFD;
+}
+
+.titulo-contacto {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.direccion,
+.telefono,
+.correo {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.titulo-newsletter {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.descripcion-newsletter {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.formulario-newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#email {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    transition: border-bottom 0.3s;
+}
+
+#email:focus {
+    border-bottom: 2px solid #227FFD;
+    outline: none;
+}
+
+.btn-subscribirse {
+    background-color: #227FFD;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-subscribirse:hover {
+    background-color: #22C1A5;
+}
+/* Estilos para la sección Acerca de Nosotros */
+.about-us {
+    background-color: #fff; /* Fondo negro */
+    padding: 80px 0;
+    color:   #000; /* Color del texto */
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #33EAD9; /* Color de título */
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea arriba para el efecto deseado */
+    margin-top: 40px;
+}
+
+.team-member {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+}
+
+.member-img {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.member-img img {
+    width: 100%;
+    height: 195px;
+    transition: transform 0.3s;
+}
+
+.member-info {
+    text-align: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    color:#fff;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.team-member:hover .member-info {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.member-info h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.member-info p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.social-icons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #fff; /* Color de íconos de redes sociales */
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #33EAD9; /* Color de íconos de redes sociales al pasar el cursor */
+}
+/* Estilos para la sección de carrusel de imágenes */
+.portfolio-carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 -10px; /* Espaciado negativo para evitar problemas de alineación */
+}
+
+.portfolio-item {
+    flex: 0 0 calc(33.333% - 20px); /* Mostrar tres imágenes a la vez y ajustar el margen */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-img img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover .portfolio-img img {
+    transform: scale(1.1);
+}
+/* Estilos generales de la sección de actividades */
+.actividades {
+    padding: 80px 0;
+}
+
+.titulo {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #33EAD9; /* Color del título de la sección */
+    text-align: center;
+
+}
+
+/* Estilos de las tarjetas de actividades */
+.lista-actividades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.actividad {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: none;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 18px;
+    text-align: center;
+
+}
+
+/* Estilos de la tarjeta de la próxima actividad */
+.detalles-actividad {
+    margin-top: 40px;
+}
+/* Estilos para la sección de Proyectos */
+.proyectos {
+    background-color: #f0f0f0;
+    padding: 80px 0;
+}
+
+.proyectos .titulo {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Grid de proyectos */
+.proyectos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.proyecto {
+    flex: 0 0 calc(33.333% - 20px);
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.proyecto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto-img img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.proyecto:hover .proyecto-img img {
+    transform: scale(1.05);
+}
+
+.proyecto-info {
+    padding: 20px;
+}
+
+.proyecto-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.proyecto-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-proyecto {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #33EAD9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-proyecto:hover {
+    background-color: #FF6B6B;
+}
+/* Estilos generales de la página de Recursos */
+.recursos {
+    padding: 80px 0;
+    background-color: #f7f7f7;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.categoria {
+    margin-bottom: 40px;
+}
+
+/* Estilos para las tarjetas (cards) */
+.card {
+    border: none;
+    transition: transform 0.2s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.btn-proyecto {
+    background-color: #33EAD9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-proyecto:hover {
+    background-color: #FF6B6B;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para íconos Font Awesome */
+.fa-arrow-right {
+    margin-left: 5px;
+}
+/* Estilos para la nueva categoría: Documentos y recursos relacionados con la SCEI */
+.categoria h3:first-of-type {
+    margin-top: 20px;
+}
+
+/* Estilos para la nueva categoría: Enlaces a blogs, revistas o publicaciones de la SCEI */
+.categoria:last-of-type {
+    margin-top: 20px;
+}
+
+/* Otros estilos se mantienen igual */
+/* Estilos para la página de Contacto */
+.contacto {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Estilos para la información de contacto */
+.informacion-contacto {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.contacto-item {
+    flex: 0 0 30%;
+    text-align: center;
+    color: #333;
+}
+
+.contacto-item i {
+    font-size: 30px;
+    color: #ff6600; /* Color de los iconos */
+    margin-bottom: 10px;
+    transition: color 0.3s; /* Efecto de hover en el color del ícono */
+}
+
+.contacto-item p {
+    font-size: 16px;
+}
+
+.contacto-item:hover i {
+    color: #ff9900; /* Cambia el color del ícono al hacer hover */
+}
+
+/* Estilos para el formulario de contacto */
+.formulario-contacto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px; /* Espacio para el ícono */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-container textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #ff6600; /* Color del botón */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Efecto de hover en el botón */
+}
+
+button[type="submit"]:hover {
+    background-color: #ff9900; /* Cambia el color del botón al hacer hover */
+}
+/* Estilos para la página de Contacto */
+.contacto {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Estilos para la información de contacto */
+.informacion-contacto {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.contacto-item {
+    flex: 0 0 30%;
+    text-align: center;
+    color: #333;
+}
+
+.contacto-item i {
+    font-size: 30px;
+    color: #ff6600; /* Color de los iconos */
+    margin-bottom: 10px;
+    transition: color 0.3s; /* Efecto de hover en el color del ícono */
+}
+
+.contacto-item p {
+    font-size: 16px;
+}
+
+.contacto-item:hover i {
+    color: #ff9900; /* Cambia el color del ícono al hacer hover */
+}
+
+/* Estilos para el formulario de contacto */
+.formulario-contacto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px; /* Espacio para el ícono */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-container textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #ff6600; /* Color del botón */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Efecto de hover en el botón */
+}
+
+button[type="submit"]:hover {
+    background-color: #ff9900; /* Cambia el color del botón al hacer hover */
+}
