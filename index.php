@@ -54,7 +54,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Noticia 1</h5>
                         <p class="card-text">Descripción de la noticia 1.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
+                        <a href="noticias/noticia1.php" class="btn btn-primary">Leer más</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Noticia 2</h5>
                         <p class="card-text">Descripción de la noticia 2.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
+                        <a href="noticias/noticia2.php" class="btn btn-primary">Leer más</a>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Noticia 3</h5>
                         <p class="card-text">Descripción de la noticia 3.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
+                        <a href="noticias/noticia3.php" class="btn btn-primary">Leer más</a>
                     </div>
                 </div>
             </div>

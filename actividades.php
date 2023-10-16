@@ -123,7 +123,7 @@
     <!-- Imagen 1 -->
     <div class="portfolio-item">
         <div class="portfolio-img">
-            <img src="img/feria.jpeg" alt="Imagen 1">
+            <img src="img/Imagen de WhatsApp 2023-08-18 a las 21.43.46_1d81c358.jpg" alt="Imagen 1">
         </div>
     </div>
     <!-- Imagen 2 -->
@@ -135,7 +135,7 @@
     <!-- Imagen 3 -->
     <div class="portfolio-item">
         <div class="portfolio-img">
-            <img src="img/feria.jpeg" alt="Imagen 3">
+            <img src="img/Imagen de WhatsApp 2023-10-12 a las 17.33.33_b147bacf.jpg" alt="Imagen 3">
         </div>
     </div>
     <!-- Agrega más imágenes aquí -->
